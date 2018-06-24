@@ -15,12 +15,12 @@
         <h1 id="nome"><%= request.getAttribute("carro")%></h1>
         <form action="datainput" method="POST">
             Total de Combustivel (Litros)<br>
-            <input type="text" size="10" name="total"><br>
+            <input type="text" size="10" name="total" pattern="[0-9]+$" title="somente numeros"><br>
             Preço Litro (R$)<br>
-            <input type="text" size="10" name="preco" > <br>
+            <input type="text" size="10" name="preco" pattern="[0-9]+$" title="somente numeros" > <br>
             Consumo médio (Km/l)<br>
-            <input type="text" size="10" name="consumo"><br>
-            <input type="submit" value="Calcular">
+            <input type="text" size="10" name="consumo" pattern="[0-9]+$" title="somente numeros"><br>
+            <input id="calculate" type="submit" value="Calcular">
         </form>
        
     </body>

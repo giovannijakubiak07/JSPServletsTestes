@@ -12,14 +12,14 @@ and open the template in the editor.
     </head>
     <body>
         <h1>Informações do seu carro</h1><br>
-            <form action="computador" method="POST">
+        <form action="computador" method="POST">
                 Informe a montadora do seu carro<br>
-                    <input type="text" size="10" name="montadora"><br>
+                <input type="text" size="10" name="montadora" ><br>
                 Informe o modelo do seu carro<br>
-                    <input type="text" size="10" name="modelo" > <br>
+                    <input type="text" size="10" name="modelo" required> <br>
                 Informe as cilindradas do seu carro (ex. 1.0, 1.4)<br>
-                    <input type="text" size="10" name="cilindradas"><br>
-                    <input type="submit" value="Submeter">
+                <input type="text" size="10" name="cilindradas" pattern= "[0-9.]{3}" title="ex: 2.0"><br>
+                <input id="botao" type="submit" value="Submeter">
             </form>
     </body>
 </html>
